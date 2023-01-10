@@ -58,7 +58,7 @@ header .logo img {
     }
 
     #responsive-text-scroll {
-        display: block;
+        display: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: gray;
         font-weight: bolder;
