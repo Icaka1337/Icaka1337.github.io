@@ -1,0 +1,148 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#responsive-text-scroll {
+    display: none;
+}
+
+body {
+    background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: change 20s infinite ease-in-out;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+header {
+    height: 12vh;
+    width: 100%;
+    text-align: center;
+}
+
+header .logo img {
+    width: 7%;
+}
+
+.strokes ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 21% 4% 20% 4%;
+    width: auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .strokes ul li a {
+        display: block;
+        padding: 10rem 1em 10rem 1em;
+    }
+
+    header .logo img {
+        width: 25%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    #responsive-text-scroll {
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: gray;
+        font-weight: bolder;
+        position: relative;
+        top: 90px;
+        text-align: center;
+        animation: color-change 1s infinite;
+    }
+
+    @keyframes color-change {
+        0% {
+            color: red;
+        }
+
+        50% {
+            color: green;
+        }
+
+        100% {
+            color: blue;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1124px) {
+    .strokes ul li a {
+        padding: 17rem 5rem 17rem 5rem;
+        position: relative;
+        left: 1.6rem;
+        max-width: 1024px;
+    }
+}
+.nav{
+    text-align: center;
+}
+@media screen and (min-width: 1300px) {
+    .strokes ul li a {
+        max-width: 100%;
+        padding: 18% 8% 18% 8%;
+    }
+}
+
+ul li {
+    line-height: 2.3;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+
+.strokes ul {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.strokes ul li a:hover {
+    background-color: black;
+    opacity: 0.77;
+}
+
+@keyframes change {
+    0% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    }
+
+    20% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-2.jpg");
+    }
+
+    40% {
+        background-image: url("https://d32swnnyen7sbd.cloudfront.net/projects/0001/32/a9323f82699e88fa6a9e11033577bfd4b77403ce.jpeg");
+    }
+
+    60% {
+        background-image: url("https://d32swnnyen7sbd.cloudfront.net/projects/0001/32/3f1638dd27883dbc231a2a7d24d3f7e081fd33f2.jpeg");
+    }
+
+    80% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-5.jpg");
+    }
+
+    100% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    }
+}

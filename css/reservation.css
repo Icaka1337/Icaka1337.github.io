@@ -1,0 +1,200 @@
+/*Центрира снимките на фона, задава ги като фоново покритие(cover), задава времето на анимацията която сменя снимките на 20сек, задава цвят и шрифт на тялото*/
+body {
+    background-position: center;
+    background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    animation: change 20s infinite ease-in-out;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Задава височината на хедъра, позицията на относителна, центрира текста */
+header {
+    height: 19.4em;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+/* Премества копирайта в лявата част на div-а */
+.copyright {
+    float: left;
+}
+
+/* Премахва празното разстояние върху хедъра */
+header.detail section h1 {
+    margin: 0;
+}
+
+/* Задава позицията на относителна, слага 150 пиксела празно място върху футъра,
+ слага линия(бордър) върху футъра и слага 15 пиксела разстояние под футъра за да го раздели от текста */
+.footer {
+    position: relative;
+    margin-top: 150px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
+
+/* Задава широчината на 100% за да обхваща цялата ширина на сайта, центрира текста, задава черен цвят на фона, задава минимална височина на 55vh */
+.content-wrap {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 50vh;
+}
+
+/* Задава снимката на фона да се сменя на определени проценти от вече създадената анимация, сменя фона през 20% /4 секунди/ */
+@keyframes change {
+    0% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    }
+
+    20% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-2.jpg");
+    }
+
+    40% {
+        background-image: url("https://d32swnnyen7sbd.cloudfront.net/projects/0001/32/a9323f82699e88fa6a9e11033577bfd4b77403ce.jpeg");
+    }
+
+    60% {
+        background-image: url("https://d32swnnyen7sbd.cloudfront.net/projects/0001/32/3f1638dd27883dbc231a2a7d24d3f7e081fd33f2.jpeg");
+    }
+
+    80% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-5.jpg");
+    }
+
+    100% {
+        background-image: url("https://www.planb-pamporovo.com/site/medias/slideshow/slide-1.jpg");
+    }
+}
+
+/* Центрира текста в h1, задава размер на шрифта в h1, задава позицията му на относителна за да го местим свободно и премества h1 текста с 65 пиксела надолу */
+h1 {
+    text-align: center;
+    font-size: 6.8rem;
+    position: relative;
+    top: 65px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+}
+
+/* Създава 30 пиксела място под елемента content */
+.content {
+    padding: 0 2rem 5rem 2rem;
+}
+
+/* Удебелява шрифта, задава размер на текста, задава място между редовете, подравнява текста в лявата част, задава допълнително място от 51 пиксела под параграфа */
+p {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.7em;
+    text-align: left;
+    margin: 51px 0;
+}
+
+/* Задава позицията на относителна, мести логото нагоре с 37 пиксела,показва icon bg като block елемент,
+    задава му широчина и височина 80 пиксела, заобля ъглите на елемента и му задава бял фон */
+.icon.bg {
+    position: relative;
+    bottom: 37px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+/* Зуумва иконата когато поставим мишката вържу нея */
+.icon:hover {
+    /* !!!ДОБАВИ webkit и ms support!!! */
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* Слага 20 пиксела под и върху логото */
+.icon img {
+    padding: 20px 0;
+}
+
+/* Мести Facebоок логото в дясната част на футъра */
+.fb {
+    float: right;
+}
+
+/* Задава 25 пиксела ширина и 10 пиксела разстояние отляво на логото */
+.fb img {
+    width: 35px;
+    padding-left: 10px;
+}
+
+/* Когато поставим мишката върху логото, то става леко прозрачно */
+.fb img:hover {
+    opacity: 0.4;
+}
+
+/* Мести Instagram логото в дясната част на футъра */
+.ig {
+    float: right;
+}
+
+/* Задава 25 пиксела ширина и 10 пиксела разстояние отляво на логото */
+.ig img {
+    width: 35px;
+    padding: 0 0 0 0.5em;
+}
+
+/* Когато курсора се постави върху логото, то става леко прозрачно */
+.ig img:hover {
+    opacity: 0.4;
+}
+
+/* Мести иконата в дясната част на футъра */
+.map {
+    float: right;
+}
+
+/* Задава 25 пиксела ширина на иконата */
+.map img {
+    width: 25px;
+}
+
+/* Когато курсора се постави върху иконата, тя става леко прозрачна */
+.map img:hover {
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 350px) {
+    .copyright {
+        font-size: 0.7em;
+    }
+
+    .fb img {
+        width: 30px;
+        padding-left: 10px;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .ig img {
+        width: 30px;
+        padding: 0 0 0 0.5em;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .map img {
+        width: 19px;
+        position: relative;
+        bottom: 5px;
+    }
+}

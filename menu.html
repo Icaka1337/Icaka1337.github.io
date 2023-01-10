@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="shadow"></div>
+    <div class="wrapper">
+        <main class>
+            <header class="detail">
+
+                <section>
+                    <h1>Меню</h1>
+                </section>
+            </header>
+            <div class="content-wrap">
+                <div class="content">
+                    <a href="index.html" class="icon bg">
+                        <img src="images/planb-icon.png" alt="icon">
+                    </a>
+                    <section>
+                        <header class="nav-menu">
+                            <ul class="tabs">
+                                <li onclick="showWhiskey()" id="alc-button1" style="border: 2px solid white;">
+                                    <h4>Ирландско Уиски</h4>
+                                </li>
+                                <li onclick="showVodka()" id="alc-button2">
+                                    <h4>Водка</h4>
+                                </li>
+                                <li onclick="showRum()" id="alc-button3">
+                                    <h4>Ром</h4>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="whiskey">
+                            <div>
+                                <h3 id="alc1">Черно Джони - 150лв</h3>
+                            </div>
+                            <div>
+                                <h3 id="alc2">Джак Даниелс - 165лв</h3>
+                            </div>
+                            <div>
+                                <h3 id="alc3">Джеймисън - 80лв</h3>
+                            </div>
+                            <div>
+                                <h3 id="alc4">Пади - 70лв</h3>
+                            </div>
+                            <div>
+                                <h3 id="alc5">Бушмилс - 80лв</h3>
+                            </div>
+                            <div>
+                                <h3 id="alc6">Червено Джони - 90лв</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="footer">
+                        <div class="copyright">©2023 Plan B Pamporovo</div>
+                        <div class="fb">
+                            <a href="https://www.facebook.com/PlanBPamporovo/" target="._blank">
+                                <img src="images/fbLogo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="ig">
+                            <a href="https://www.instagram.com/plan_b_pamporovo" target="._blank">
+                                <img src="images/igLogo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="map">
+                            <a href="https://www.google.bg/maps/place/Plan+B+Pamporovo/@41.6580936,24.6945784,17z/data=!3m1!4b1!4m5!3m4!1s0x14ac580bccaba4f1:0x5149b025e037f237!8m2!3d41.6580896!4d24.6967724?hl=bg"
+                                target="._blank">
+                                <img src="images/mapLogo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <script>
+        function showWhiskey() {
+            document.getElementById("alc-button1").style.border = "2px solid white";
+            document.getElementById("alc-button2").style.border = "none";
+            document.getElementById("alc-button3").style.border = "none";
+            document.getElementById("alc1").innerHTML = "Черно Джони - 150лв";
+            document.getElementById("alc2").innerHTML = "Джак Даниелс - 165лв";
+            document.getElementById("alc3").innerHTML = "Джеймисън - 80лв";
+            document.getElementById("alc4").innerHTML = "Пади - 70лв";
+            document.getElementById("alc5").innerHTML = "Бушмилс - 80лв";
+            document.getElementById("alc6").innerHTML = "Червено Джони - 90лв";
+        }
+        function showVodka() {
+            document.getElementById("alc-button1").style.border = "none";
+            document.getElementById("alc-button2").style.border = "2px solid white";
+            document.getElementById("alc-button3").style.border = "none";
+            document.getElementById("alc1").innerHTML = "Руски Стандарт - 130лв";
+            document.getElementById("alc2").innerHTML = "Сива Гъска - 365лв";
+            document.getElementById("alc3").innerHTML = "Финландия - 70лв";
+            document.getElementById("alc4").innerHTML = "Абсолют - 70лв";
+            document.getElementById("alc5").innerHTML = "Собиески - 80лв";
+            document.getElementById("alc6").innerHTML = "Смирноф - 90лв";
+        }
+        function showRum() {
+            document.getElementById("alc-button1").style.border = "none";
+            document.getElementById("alc-button2").style.border = "none";
+            document.getElementById("alc-button3").style.border = "2px solid white";
+            document.getElementById("alc1").innerHTML = "Хавана клуб - 60лв";
+            document.getElementById("alc2").innerHTML = "Малибу - 50лв";
+            document.getElementById("alc3").innerHTML = "Сантяго де Куба - 90лв";
+            document.getElementById("alc4").innerHTML = "Пампери - 100лв";
+            document.getElementById("alc5").innerHTML = "Бакарди - 120лв";
+            document.getElementById("alc6").innerHTML = "Капитан Морган - 80лв";
+        }
+
+    </script>
+</body>
+
+</html>
