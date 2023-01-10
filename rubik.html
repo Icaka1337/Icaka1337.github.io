@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubik.bg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="rubik.css">
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html?#Home"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="https://rubik.bg/img/rubikbg-logo-1672648331.jpg" alt="">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html?#Home" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="about.html?#About" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <div class="form-outline">
+                    <input id="search" type="text" class="form-control" placeholder="Search by mm:">
+                </div>
+
+                <div class="text-end">
+                    <button type="button" id="search-button"
+                        class="btn btn-outline-light me-2">Search</button>
+                    <button type="button" id="login-button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" id="sign-up-button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="display-none" id="login-container">
+        <button type="button" id="close-login-button" class="btn btn-close-white close-button"
+            aria-label="Close"></button>
+        <div class="myform bg-dark form">
+            <h3 class="text-center">Login Form</h3>
+            <form>
+                <div class="mb-3 mt-4">
+                    <label for="inputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                <p>Not a member? <a id="sign-up" href="#">Signup now</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="display-none" id="sign-up-container">
+        <button type="button" id="close-sign-up-button" class="btn btn-close-white close-button"
+            aria-label="Close"></button>
+        <div class="myform bg-dark form">
+            <h3 class="text-center">Sign-up Form</h3>
+            <form>
+                <div class="mb-3 mt-4">
+                    <label for="exampleInputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword">
+                </div>
+                <button type="submit" class="btn btn-light mt-3">SIGN-UP</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div id="cube1" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 56mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $57.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube2" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 60mm Magnetic</h5>
+                                <!-- Product price-->
+                                $59.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube3" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 65mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $63.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube4" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 70mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $89.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube5" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 102mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $100.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube6" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 id="cube6" class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 60mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $56.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube7" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 45mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $30.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cube8" class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top"
+                            src="https://rubik.bg/7043-home_default/kub-za-skorostno-narezhdane-gancube-gan-11-m-pro-frosted-black-3x3x3-56mm-magnetic-stickerless.jpg"
+                            alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 id="cube8" class="fw-bolder">Gancube GAN 11 M Pro Frosted Black 3x3x3 38mm Magnetic
+                                </h5>
+                                <!-- Product price-->
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Buy now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html?#Home" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="about.html?#About" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2014-2023 Всички права запазени | Онлайн магазин Rubik.bg™</p>
+        </footer>
+    </div>
+
+    <script src="rubik.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
